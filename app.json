@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "Las Delicias del Cerso",
+    "slug": "las-delicias-del-cerso",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#d32f2f"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.lasdelicias.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#d32f2f"
+      },
+      "package": "com.lasdelicias.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "packagingOptions": {
+              "pickFirst": [
+                "**/libc++_shared.so"
+              ]
+            }
+          },
+          "ios": {}
+        }
+      ]
+    ],
+    "newArchEnabled": true,
+    "extra": {
+      "eas": {
+        "projectId": "3a9dc74f-fd5a-4e53-a6da-66746a1c10ee"
+      }
+    }
+  }
+}

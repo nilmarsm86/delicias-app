@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#d32f2f">
+  <title>Las Delicias del Cerso</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    #root {
+      display: flex;
+      flex: 1;
+      min-height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+    // Forzar MIME type correcto
+    window.addEventListener('error', function(e) {
+      if (e.target.tagName === 'SCRIPT' && e.target.src.includes('index.bundle')) {
+        console.error('Error cargando bundle, recargando...');
+        setTimeout(() => {
+          window.location.reload();
+        }, 1000);
+      }
+    });
+  </script>
+</body>
+</html>
