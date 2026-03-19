@@ -1,0 +1,10 @@
+appId: 3a9dc74f-fd5a-4e53-a6da-66746a1c10ee
+
+- launchApp
+- tapOn: 'Admin'
+- assertVisible: 'Panel de Administración'
+- tapOn: 'Agregar Item'
+- inputText: 'Item de Test'
+- hideKeyboard
+- tapOn: 'Guardar'
+- assertVisible: 'Item agregado'

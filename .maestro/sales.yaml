@@ -1,0 +1,8 @@
+appId: 3a9dc74f-fd5a-4e53-a6da-66746a1c10ee
+
+- launchApp
+- assertVisible: 'Hamburguesa Clásica'
+- tapOn:
+    point: "50%,50%" # Toca el primer item (ajusta según UI)
+- tapOn: 'Guardar'
+- assertVisible: 'Ventas guardadas'

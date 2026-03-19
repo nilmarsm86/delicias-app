@@ -54,6 +54,7 @@ const ItemFormModal = ({
           <ScrollView style={styles.modalBody}>
             <Text style={styles.label}>Nombre del item *</Text>
             <TextInput
+              testID="itemNameInput"
               style={styles.input}
               placeholder="Ej: Hamburguesa Clásica"
               placeholderTextColor={colors.textLight}
@@ -64,6 +65,7 @@ const ItemFormModal = ({
 
             <Text style={styles.label}>Precio *</Text>
             <TextInput
+              testID="itemPriceInput"
               style={styles.input}
               placeholder="Ej: 12.99"
               placeholderTextColor={colors.textLight}

@@ -1,0 +1,13 @@
+url: http://localhost:8081
+---
+- launchApp
+- assertVisible: "LAS DELICIAS DEL CERDO"
+#- assertVisible: "Srta Melis"
+#- tapOn: "Fecha:.*"
+#- tapOn: "Comidas"
+#- assertVisible: "Hamburguesa Clásica"
+#- tapOn:
+#    point: "50%,50%"
+#- assertVisible: "1"
+- assertVisible: '"Srta Melis"'
+- tapOn: Estadísticas

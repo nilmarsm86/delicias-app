@@ -1,0 +1,7 @@
+appId: 3a9dc74f-fd5a-4e53-a6da-66746a1c10ee # Cambia por tu bundle ID
+
+- launchApp
+- assertVisible: 'LAS DELICIAS DEL CERDO'
+- assertVisible: 'Srta Melis'
+- tapOn: 'Fecha:.*' # Toca el selector de fecha
+- tapOn: 'Guardar'

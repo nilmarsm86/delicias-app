@@ -1,0 +1,25 @@
+appId: 3a9dc74f-fd5a-4e53-a6da-66746a1c10ee
+
+env:
+  WEB_APP_URL: "http://localhost:8081"
+
+- launchApp:
+    appId: "chrome"
+    url: "${WEB_APP_URL}"
+
+# Navegar a Admin
+- tapOn: "Admin"
+- assertVisible: "Panel de Administración"
+
+# Agregar nuevo item
+- tapOn: "Agregar Item"
+- tapOn:
+    id: "itemNameInput" # Necesitas agregar testID
+- inputText: "Pizza Web Test"
+- tapOn:
+    id: "itemPriceInput"
+- inputText: "14.99"
+- tapOn: "Guardar"
+
+# Verificar éxito
+- assertVisible: "Item agregado"
